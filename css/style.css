@@ -119,7 +119,7 @@ li{
     font-family: var(--font-montserrat);
     font-weight: 700;
     font-size: 96px;
-    color: var(--color-dark-purple);
+    color: var(--color-purple);
     line-height: 110%;
     letter-spacing: 0.96px;
 }
@@ -130,7 +130,7 @@ li{
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.2px;
-    color: var(--color-dark-purple);
+    color: var(--color-purple);
     margin-top: 32px;
 }
 
@@ -273,6 +273,63 @@ li{
         font-size: 12px;
     }
 }
+
+
+/*FOR STUDENTS WHO SECTION*/
+.for-students-who{
+    margin-top: 120px;
+}
+
+.for-students-who__caption{
+    font-family: var(--font-montserrat);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 110%;
+    color: var(--color-purple);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.for-students-who__list{
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+
+
+.for-students-who__img{
+    margin: 0 auto;
+}
+
+.for-students-who__list-item h3{
+    font-size: 24px;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    color: var(--color-purple);
+    text-align: center;
+    margin: 12px 0;
+}
+
+.for-students-who__list-item p{
+    color: var(--color-purple);
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1240px){
+    .for-students-who__caption{
+        font-size: 40px;
+    }
+}
+
 
 
 
