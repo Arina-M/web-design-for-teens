@@ -185,4 +185,65 @@ li{
     background: var(--color-light-purple);
 }
 
+@media screen and (max-width: 1550px){
+    .header__content{
+        margin-bottom: 12px;
+    }
+
+    .header__menu-logo{
+        width: 155px;
+    }
+    .header__signInButton{
+        font-size: 15px;
+    }
+
+    .hero__textH1{
+        font-size: 75px;
+    }
+
+    .hero__textH3{
+        font-size: 16px;
+    }
+
+    .hero__arrow{
+        width: 130px;
+        left: 53%;
+    }
+
+    .hero__button-about-course{
+        right: 16%;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1240px){
+    .header__menu-logo{
+        width: 150px;
+    }
+    .header__signInButton{
+        font-size: 12px;
+    }
+
+    .hero__textH1{
+        font-size: 60px;
+    }
+
+    .hero__textH3{
+        font-size: 13px;
+    }
+
+    .hero__arrow{
+        width: 100px;
+        left: 53%;
+    }
+
+    .hero__button-about-course{
+        right: 16%;
+        font-size: 12px;
+    }
+}
+
+
+
 
