@@ -216,6 +216,11 @@ li{
     }
 }
 
+@media screen and (max-width: 1650px){
+    .hero__arrow{
+        width: 130px;
+    }
+}
 
 @media screen and (max-width: 1240px){
     .header__menu-logo{
@@ -243,6 +248,34 @@ li{
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 1035px){
+    .header__menu-logo{
+        width: 120px;
+    }
+
+    .hero__textH1{
+        font-size: 52px;
+    }
+
+    .hero__textH3{
+        font-size: 12px;
+    }
+
+    .hero__arrow{
+        width: 80px;
+        left: 50%;
+        top: 68%;
+    }
+
+    .hero__button-about-course{
+        right: 16%;
+        font-size: 12px;
+    }
+}
+
+
+
 
 
 
