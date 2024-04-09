@@ -138,6 +138,7 @@ li{
     background: var(--color-light-purple);
 }
 
+/*desktop*/
 @media screen and (max-width: 1200px) {
     .header__menu-logo{
         width: 154px;
@@ -147,11 +148,29 @@ li{
         padding: 15px 20px;
         font-size: 14px;
     }
-
-
 }
 
+/*tablet*/
+@media screen and (max-width: 1040px){
+    .header__content{
+        margin-bottom: 15px;
+    }
 
+    .header__menu-logo {
+        width: 100px;
+        height: 65px;
+    }
+
+    .header__menu-item-link{
+        font-size: 12px;
+    }
+
+    .header__signInButton{
+        font-size: 10px;
+        padding: 12px 13px;
+        border-radius: 9px;
+    }
+}
 
 
 
@@ -237,6 +256,7 @@ li{
     background: var(--color-light-purple);
 }
 
+/*desktop*/
 @media screen and (max-width: 1440px){
     .hero__textH1{
         font-size: 65px;
@@ -283,63 +303,32 @@ li{
 
 }
 
-/*@media screen and (max-width: 1650px){*/
-/*    .hero__arrow{*/
-/*        width: 130px;*/
-/*    }*/
-/*}*/
+/*tablet*/
+@media screen and (max-width: 1040px) {
+    .hero_text{
+        left: 43%;
+    }
 
-/*@media screen and (max-width: 1240px){*/
-/*    .header__menu-logo{*/
-/*        width: 150px;*/
-/*    }*/
-/*    .header__signInButton{*/
-/*        font-size: 12px;*/
-/*    }*/
+    .hero__textH1{
+        font-size: 35px;
+    }
 
-/*    .hero__textH1{*/
-/*        font-size: 60px;*/
-/*    }*/
+    .hero__textH3{
+        font-size: 11px;
+    }
 
-/*    .hero__textH3{*/
-/*        font-size: 13px;*/
-/*    }*/
+    .hero__arrow{
+        width: 80px;
+        left: 53%;
+    }
 
-/*    .hero__arrow{*/
-/*        width: 100px;*/
-/*        left: 53%;*/
-/*    }*/
+    .hero__button-about-course{
+        font-size: 10px;
+        padding: 12px 13px;
+        border-radius: 9px;
 
-/*    .hero__button-about-course{*/
-/*        right: 16%;*/
-/*        font-size: 12px;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 1035px){*/
-/*    .header__menu-logo{*/
-/*        width: 120px;*/
-/*    }*/
-
-/*    .hero__textH1{*/
-/*        font-size: 52px;*/
-/*    }*/
-
-/*    .hero__textH3{*/
-/*        font-size: 12px;*/
-/*    }*/
-
-/*    .hero__arrow{*/
-/*        width: 80px;*/
-/*        left: 50%;*/
-/*        top: 68%;*/
-/*    }*/
-
-/*    .hero__button-about-course{*/
-/*        right: 16%;*/
-/*        font-size: 12px;*/
-/*    }*/
-/*}*/
+    }
+}
 
 
 
@@ -387,6 +376,7 @@ li{
     margin: 0 auto;
 }
 
+/*desktop*/
 @media screen and (max-width: 1200px) {
     .for-students-who{
         margin-top: 110px;
@@ -394,10 +384,6 @@ li{
 
     .for-students-who__caption{
         font-size: 38px;
-    }
-
-    .for-students-who__list{
-        flex-wrap: wrap;
     }
 
     .for-students-who__list-item h3{
@@ -417,7 +403,24 @@ li{
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1040px){
+    .for-students-who{
+        margin-top: 55px;
+    }
+
+    .for-students-who__caption {
+        font-size: 30px;
+    }
+
+    .for-students-who__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 148px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
 
 }
 
