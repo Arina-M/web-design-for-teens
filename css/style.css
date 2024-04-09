@@ -19,9 +19,45 @@ li{
 }
 
 .container {
-    max-width: 1700px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 396px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 738px;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1400px;
+    }
 }
 
 :root{
@@ -44,7 +80,6 @@ li{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    /*position: relative;*/
 }
 
 .header__menu-logo{
@@ -103,6 +138,22 @@ li{
     background: var(--color-light-purple);
 }
 
+@media screen and (max-width: 1200px) {
+    .header__menu-logo{
+        width: 154px;
+        height: 100px;
+    }
+    .header__signInButton{
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
 
 /* HERO */
 .hero{
@@ -118,7 +169,7 @@ li{
 .hero__textH1{
     font-family: var(--font-montserrat);
     font-weight: 700;
-    font-size: 96px;
+    font-size: 70px;
     color: var(--color-purple);
     line-height: 110%;
     letter-spacing: 0.96px;
@@ -126,7 +177,7 @@ li{
 
 .hero__textH3{
     font-family: var(--font-roboto);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.2px;
@@ -137,7 +188,7 @@ li{
 .hero__text{
     position: absolute;
     top: 28%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     overflow-x: hidden;
     white-space: nowrap;
@@ -159,8 +210,9 @@ li{
 .hero__arrow{
     position: absolute;
     top: 70%;
-    left: 54%;
+    left: 51%;
     transform: translate(-50%, -50%);
+    width: 140px;
 }
 
 .hero__button-about-course{
@@ -177,7 +229,7 @@ li{
     cursor: pointer;
     position: absolute;
     bottom: 2%;
-    right: 20%;
+    right: 18%;
     transform: translate(-50%, -50%);
 }
 
@@ -185,97 +237,113 @@ li{
     background: var(--color-light-purple);
 }
 
-@media screen and (max-width: 1550px){
-    .header__content{
-        margin-bottom: 12px;
+@media screen and (max-width: 1440px){
+    .hero__textH1{
+        font-size: 65px;
     }
 
-    .header__menu-logo{
-        width: 155px;
+    .hero__textH3{
+        font-size: 17px;
+        margin-top: 22px;
     }
-    .header__signInButton{
+
+    .hero__arrow{
+        width: 126px;
+        left: 52%;
+        top: 69%;
+    }
+
+    .hero__button-about-course{
+        right: 12%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .hero__textH1{
+        font-size: 55px;
+    }
+
+    .hero__textH3{
         font-size: 15px;
     }
 
-    .hero__textH1{
-        font-size: 75px;
-    }
-
-    .hero__textH3{
-        font-size: 16px;
-    }
-
     .hero__arrow{
-        width: 130px;
-        left: 53%;
+        width: 102px;
+        left: 52%;
+        top: 69%;
     }
 
     .hero__button-about-course{
-        right: 16%;
-        font-size: 15px;
+        right: 12%;
+        bottom: 0;
+        font-size: 14px;
+        padding: 15px 20px;
     }
+
 }
 
-@media screen and (max-width: 1650px){
-    .hero__arrow{
-        width: 130px;
-    }
-}
+/*@media screen and (max-width: 1650px){*/
+/*    .hero__arrow{*/
+/*        width: 130px;*/
+/*    }*/
+/*}*/
 
-@media screen and (max-width: 1240px){
-    .header__menu-logo{
-        width: 150px;
-    }
-    .header__signInButton{
-        font-size: 12px;
-    }
+/*@media screen and (max-width: 1240px){*/
+/*    .header__menu-logo{*/
+/*        width: 150px;*/
+/*    }*/
+/*    .header__signInButton{*/
+/*        font-size: 12px;*/
+/*    }*/
 
-    .hero__textH1{
-        font-size: 60px;
-    }
+/*    .hero__textH1{*/
+/*        font-size: 60px;*/
+/*    }*/
 
-    .hero__textH3{
-        font-size: 13px;
-    }
+/*    .hero__textH3{*/
+/*        font-size: 13px;*/
+/*    }*/
 
-    .hero__arrow{
-        width: 100px;
-        left: 53%;
-    }
+/*    .hero__arrow{*/
+/*        width: 100px;*/
+/*        left: 53%;*/
+/*    }*/
 
-    .hero__button-about-course{
-        right: 16%;
-        font-size: 12px;
-    }
-}
+/*    .hero__button-about-course{*/
+/*        right: 16%;*/
+/*        font-size: 12px;*/
+/*    }*/
+/*}*/
 
-@media screen and (max-width: 1035px){
-    .header__menu-logo{
-        width: 120px;
-    }
+/*@media screen and (max-width: 1035px){*/
+/*    .header__menu-logo{*/
+/*        width: 120px;*/
+/*    }*/
 
-    .hero__textH1{
-        font-size: 52px;
-    }
+/*    .hero__textH1{*/
+/*        font-size: 52px;*/
+/*    }*/
 
-    .hero__textH3{
-        font-size: 12px;
-    }
+/*    .hero__textH3{*/
+/*        font-size: 12px;*/
+/*    }*/
 
-    .hero__arrow{
-        width: 80px;
-        left: 50%;
-        top: 68%;
-    }
+/*    .hero__arrow{*/
+/*        width: 80px;*/
+/*        left: 50%;*/
+/*        top: 68%;*/
+/*    }*/
 
-    .hero__button-about-course{
-        right: 16%;
-        font-size: 12px;
-    }
-}
+/*    .hero__button-about-course{*/
+/*        right: 16%;*/
+/*        font-size: 12px;*/
+/*    }*/
+/*}*/
 
 
-/*FOR STUDENTS WHO SECTION*/
+
+/* FOR STUDENTS WHO SECTION */
 .for-students-who{
     margin-top: 120px;
 }
@@ -292,13 +360,8 @@ li{
 
 .for-students-who__list{
     display: flex;
-    justify-content: center;
-    /*align-items: center;*/
-    flex-wrap: wrap;
-    gap: 80px;
+    justify-content: space-between;
 }
-
-
 
 .for-students-who__img{
     margin: 0 auto;
@@ -324,11 +387,53 @@ li{
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1240px){
-    .for-students-who__caption{
-        font-size: 40px;
+@media screen and (max-width: 1200px) {
+    .for-students-who{
+        margin-top: 110px;
     }
+
+    .for-students-who__caption{
+        font-size: 38px;
+    }
+
+    .for-students-who__list{
+        flex-wrap: wrap;
+    }
+
+    .for-students-who__list-item h3{
+        font-size: 20px;
+        /*width: 235px;*/
+        margin: 10px auto;
+    }
+
+    .for-students-who__list-item p{
+        font-size: 13px;
+        width: 235px;
+    }
+
+    .for-students-who__list-item{
+        max-width: 280px;
+    }
+
 }
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 630px) {
+
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+
+
+
+
+
 
 
 
