@@ -409,13 +409,26 @@ li{
     }
 
     .for-students-who__caption {
-        font-size: 30px;
+        font-size: 28px;
+        margin-bottom: 35px;
     }
 
     .for-students-who__list {
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px 148px;
+        /*justify-content: center;*/
+        /*gap: 30px 148px;*/
+    }
+
+    .for-students-who__list-item {
+        max-width: 220px;
+    }
+
+    .for-students-who__list-item h3{
+        font-size: 15px;
+    }
+
+    .for-students-who__list-item p{
+        font-size: 10px;
     }
 }
 
