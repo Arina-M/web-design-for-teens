@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-li{
+ul{
     list-style: none;
 }
 
@@ -337,7 +337,7 @@ li{
     margin-top: 120px;
 }
 
-.for-students-who__caption{
+.caption-h2{
     font-family: var(--font-montserrat);
     font-size: 48px;
     font-weight: 600;
@@ -382,7 +382,7 @@ li{
         margin-top: 110px;
     }
 
-    .for-students-who__caption{
+    .caption-h2{
         font-size: 38px;
     }
 
@@ -408,7 +408,7 @@ li{
         margin-top: 55px;
     }
 
-    .for-students-who__caption {
+    .caption-h2 {
         font-size: 28px;
         margin-bottom: 35px;
     }
@@ -444,6 +444,59 @@ li{
 @media screen and (min-width: 480px) {
 
 }
+
+
+/* EDUCATIONAL PROGRAMME SECTION*/
+.educational-programme{
+    margin-top: 120px;
+}
+
+.educational-programme__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.educational-programme__list-item{
+    padding: 120px 48px;
+    border-radius: 15px;
+    background: var(--color-pink);
+}
+
+.educational-programme__module-number{
+    color: var(--color-light-purple);
+    font-family: var(--font-montserrat);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 32px;
+}
+
+.educational-programme__div h4{
+    color: var(--color-purple);
+    font-family: var(--font-montserrat);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 24px;
+
+}
+
+
+.educational-programme__div ul li{
+    color: var(--color-purple);
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    letter-spacing: 0.02px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
 
 
 
