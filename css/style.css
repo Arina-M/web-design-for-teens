@@ -403,6 +403,7 @@ ul{
 
 }
 
+/*tablet*/
 @media screen and (max-width: 1040px){
     .for-students-who{
         margin-top: 55px;
@@ -444,6 +445,7 @@ ul{
 @media screen and (min-width: 480px) {
 
 }
+
 
 
 /* EDUCATIONAL PROGRAMME SECTION*/
@@ -489,6 +491,58 @@ ul{
     font-size: 20px;
 
 }
+
+@media screen and (max-width: 1440px) {
+    .educational-programme__list-item{
+        padding: 100px 55px;
+    }
+
+    .educational-programme__module-number{
+        font-size: 45px;
+    }
+
+    .educational-programme__div h4{
+        font-size: 26px;
+    }
+
+    .educational-programme__div ul li{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .educational-programme__module-number{
+        font-size: 39px;
+    }
+
+    .educational-programme__div h4{
+        font-size: 24px;
+    }
+
+}
+
+
+/*tablet*/
+@media screen and (max-width: 1040px){
+    .educational-programme__list-item{
+        padding: 65px 43px;
+    }
+
+    .educational-programme__module-number{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .educational-programme__div h4{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .educational-programme__div ul li{
+        font-size: 10px;
+    }
+}
+
 
 
 
