@@ -595,42 +595,55 @@ ul{
     margin-left: 0;
 }
 
-.education-steps__figures{
-    display: flex;
-    position: absolute;
-    top: -197px;
-    z-index: 5;
-    justify-content: space-between;
-}
+/*.education-steps__figures{*/
+/*    display: flex;*/
+/*    position: absolute;*/
+/*    top: -197px;*/
+/*    z-index: 5;*/
+/*    justify-content: space-between;*/
+/*}*/
 
 .education-steps__left-figure{
-    /*position: absolute;*/
-    /*z-index: 5;*/
-    /*top: -190px;*/
-    /*left: 250px;*/
-    /*width: 480px;*/
-    width: 40%;
+    position: absolute;
+    z-index: 5;
+    top: -185px;
+    left: 40px;
+    width: 480px;
+    /*width: 40%;*/
 }
 
 .education-steps__right-figure{
-    /*position: absolute;*/
-    /*z-index: 5;*/
-    /*bottom: -83px;*/
-    /*right: 270px;*/
-    /*width: 480px;*/
-    width: 37%;
+    position: absolute;
+    z-index: 5;
+    bottom: -30px;
+    right: 40px;
+    width: 480px;
+    /*width: 37%;*/
     /*margin-top: 300px;*/
 }
 
 /*desktop*/
 @media screen and (max-width: 1400px) {
-    .education-steps__content{
+    .education-steps__content {
         width: 780px;
     }
 
     .education-steps__list-item:nth-child(even) {
         margin-left: 36%;
     }
+
+    .education-steps__left-figure {
+        top: -185px;
+        left: 20px;
+        width: 470px;
+    }
+
+    .education-steps__right-figure {
+        bottom: -38px;
+        right: 20px;
+        width: 470px;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -655,9 +668,23 @@ ul{
         width: 240px;
         margin-top: 6px;
     }
+
+    .education-steps__list-item{
+        margin-top: 20px;
+    }
+
+    .education-steps__left-figure {
+        top: -156px;
+        width: 405px;
+    }
+
+    .education-steps__right-figure {
+        bottom: -23px;
+        width: 405px;
+    }
 }
 
-/* tablet*/
+    /* tablet*/
 @media screen and (max-width: 1040px) {
     .education-steps__content{
         width: 570px;
@@ -680,6 +707,24 @@ ul{
         width: 200px;
         margin-top: 6px;
     }
+
+    .education-steps__list-item{
+        margin-top: 10px;
+    }
+
+    .education-steps__left-figure {
+        top: -127px;
+        width: 322px;
+        left: 75px;
+    }
+
+    .education-steps__right-figure {
+        bottom: -15px;
+        width: 322px;
+        right: 78px;
+    }
+
+
 }
 
 
