@@ -549,7 +549,7 @@ ul{
 }
 
 .education-steps__content{
-    width: 900px;
+    width: 870px;
     margin: 0 auto;
 }
 
@@ -580,6 +580,7 @@ ul{
     font-weight: 500;
     width: 311px;
     margin-top: 12px;
+    line-height: 19px;
 }
 
 .step-info{
@@ -587,28 +588,101 @@ ul{
 }
 
 .education-steps__list-item:nth-child(even) {
-    margin-left: 40%;
+    margin-left: 42%;
 }
 
 .education-steps__list-item:nth-child(odd) {
     margin-left: 0;
 }
 
-.education-steps__left-figure{
+.education-steps__figures{
+    display: flex;
     position: absolute;
+    top: -197px;
     z-index: 5;
-    top: -190px;
-    left: 250px;
-    width: 480px;
+    justify-content: space-between;
+}
+
+.education-steps__left-figure{
+    /*position: absolute;*/
+    /*z-index: 5;*/
+    /*top: -190px;*/
+    /*left: 250px;*/
+    /*width: 480px;*/
+    width: 40%;
 }
 
 .education-steps__right-figure{
-    position: absolute;
-    z-index: 5;
-    bottom: -83px;
-    right: 270px;
-    width: 480px;
+    /*position: absolute;*/
+    /*z-index: 5;*/
+    /*bottom: -83px;*/
+    /*right: 270px;*/
+    /*width: 480px;*/
+    width: 37%;
+    /*margin-top: 300px;*/
 }
+
+/*desktop*/
+@media screen and (max-width: 1400px) {
+    .education-steps__content{
+        width: 780px;
+    }
+
+    .education-steps__list-item:nth-child(even) {
+        margin-left: 36%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .education-steps__content{
+        width: 670px;
+    }
+
+    .education-steps__list-item:nth-child(even) {
+        margin-left: 33%;
+    }
+
+    .step-number{
+        font-size: 60px;
+    }
+
+    .step-info h3{
+        font-size: 18px;
+    }
+
+    .step-info p{
+        font-size: 12px;
+        width: 240px;
+        margin-top: 6px;
+    }
+}
+
+/* tablet*/
+@media screen and (max-width: 1040px) {
+    .education-steps__content{
+        width: 570px;
+    }
+
+    .education-steps__list-item:nth-child(even) {
+        margin-left: 31%;
+    }
+
+    .step-number{
+        font-size: 50px;
+    }
+
+    .step-info h3{
+        font-size: 16px;
+    }
+
+    .step-info p{
+        font-size: 10px;
+        width: 200px;
+        margin-top: 6px;
+    }
+}
+
+
 
 
 
