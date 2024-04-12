@@ -724,9 +724,94 @@ ul{
         right: 78px;
     }
 
-
 }
 
+
+
+/* TARIFFS SECTION*/
+.tariffs{
+    margin-top: 120px;
+}
+
+.tariffs__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tariffs__list-item{
+    padding: 80px 48px 100px 48px;
+    border-radius: 15px;
+    background-color: var(--color-dark-pink);
+    width: 613px;
+}
+
+.tariffs__item-caption{
+    color: var(--color-light-purple);
+    text-align: center;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 32px;
+}
+
+.tariffs__item-info{
+    color: var(--color-purple);
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 24px;
+    width: 517px;
+}
+
+.tariffs__list-item:first-of-type .tariffs__item-info{
+    margin-bottom: 55px;
+}
+
+
+.tariffs__item-description{
+    color: var(--color-purple);
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    line-height: 22px;
+    width: 475px;
+}
+
+.tariffs__item-price{
+    color: var(--color-purple);
+    font-family: var(--font-montserrat);
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 32px 0;
+}
+
+.tariffs__startEducationBtn{
+    padding: 16px 24px;
+    border-radius: 15px;
+    background: var(--color-dark-purple);
+    cursor: pointer;
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color var(--transition);
+    border: none;
+}
+
+.tariffs__startEducationBtn:hover,
+.tariffs__startEducationBtn:focus{
+    background: var(--color-light-purple);
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
 
 
 
