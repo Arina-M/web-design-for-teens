@@ -466,16 +466,17 @@ ul{
 .educational-programme__module-number{
     color: var(--color-light-purple);
     font-family: var(--font-montserrat);
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 110%;
     margin-bottom: 32px;
+    text-align: center;
 }
 
 .educational-programme__div h4{
     color: var(--color-purple);
     font-family: var(--font-montserrat);
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 24px;
 
@@ -487,6 +488,8 @@ ul{
     font-weight: 500;
     letter-spacing: 0.02px;
     font-size: 20px;
+    width: 340px;
+
 
 }
 
@@ -496,25 +499,30 @@ ul{
     }
 
     .educational-programme__module-number{
-        font-size: 45px;
+        font-size: 32px;
     }
 
     .educational-programme__div h4{
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .educational-programme__div ul li{
         font-size: 14px;
+        width: 240px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .educational-programme__module-number{
-        font-size: 39px;
+        font-size: 28px;
     }
 
     .educational-programme__div h4{
-        font-size: 24px;
+        font-size: 18px;
+    }
+
+    .educational-programme__div ul li{
+        width: 190px;
     }
 
 }
@@ -537,6 +545,7 @@ ul{
 
     .educational-programme__div ul li{
         font-size: 10px;
+        width: 135px;
     }
 }
 
@@ -623,7 +632,7 @@ ul{
 }
 
 /*desktop*/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     .education-steps__content {
         width: 780px;
     }
@@ -728,7 +737,7 @@ ul{
 
 
 
-/* TARIFFS SECTION*/
+/* TARIFFS SECTION */
 .tariffs{
     margin-top: 120px;
 }
@@ -769,7 +778,6 @@ ul{
     margin-bottom: 55px;
 }
 
-
 .tariffs__item-description{
     color: var(--color-purple);
     font-family: var(--font-montserrat);
@@ -807,16 +815,109 @@ ul{
     background: var(--color-light-purple);
 }
 
-
 .flex{
     display: flex;
     justify-content: center;
 }
 
 
+@media screen and (max-width: 1440px) {
+    .tariffs__list-item{
+        width: 565px;
+        padding: 80px 41px 100px 41px;
+    }
 
+    .tariffs__item-caption{
+        font-size: 37px;
+    }
 
+    .tariffs__item-info {
+        font-size: 22px;
+        width: 510px;
+    }
 
+    .tariffs__item-description{
+        font-size: 14px;
+        width: 415px;
+    }
+
+    .tariffs__item-price{
+        font-size: 34px;
+    }
+
+    .tariffs__list-item:first-of-type .tariffs__item-info{
+        margin-bottom: 59px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tariffs__list-item{
+        width: 465px;
+    }
+
+    .tariffs__item-caption{
+        font-size: 32px;
+    }
+
+    .tariffs__item-info {
+        font-size: 16px;
+        width: 374px;
+    }
+
+    .tariffs__item-description {
+        font-size: 12px;
+        width: 357px;
+    }
+
+    .tariffs__item-price{
+        font-size: 30px;
+    }
+
+    .tariffs__list-item:first-of-type .tariffs__item-info{
+        margin-bottom: 59px;
+    }
+
+    .tariffs__startEducationBtn{
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .tariffs__list-item{
+        width: 346px;
+    }
+
+    .tariffs__item-caption{
+        font-size: 25px;
+    }
+
+    .tariffs__item-info {
+        font-size: 14px;
+        width: 320px;
+        line-height: 23px;
+    }
+
+    .tariffs__item-description {
+        font-size: 10px;
+        width: 275px;
+        line-height: 18px;
+    }
+
+    .tariffs__item-price{
+        font-size: 22px;
+    }
+
+    .tariffs__list-item:first-of-type .tariffs__item-info{
+        margin-bottom: 48px;
+    }
+
+    .tariffs__startEducationBtn{
+        font-size: 10px;
+        padding: 12px 13px;
+        border-radius: 9px;
+    }
+}
 
 
 
