@@ -23,9 +23,9 @@
                 <a class="header__menu-logo" href="./index.html"><img src="images/logo_dark.png" alt="logo"></a>
                 <nav class="nav-menu">
                     <ul class="header__menu-list">
-                        <li class="header__menu-list-item"><a href="./index.html" class="header__menu-item-link current" rel="noopener noreferrer nofolow">Програма</a></li>
-                        <li class="header__menu-list-item"><a href="./programme.html" class="header__menu-item-link" rel="noopener noreferrer nofolow">Тарифи</a></li>
-                        <li class="header__menu-list-item"><a href="./aboutEducation.html" class="header__menu-item-link" rel="noopener noreferrer nofolow">Про навчання</a></li>
+                        <li class="header__menu-list-item"><a href="#programme" class="header__menu-item-link current" rel="noopener noreferrer nofolow">Програма</a></li>
+                        <li class="header__menu-list-item"><a href="#tariffs" class="header__menu-item-link" rel="noopener noreferrer nofolow">Тарифи</a></li>
+                        <li class="header__menu-list-item"><a href="#education-steps" class="header__menu-item-link" rel="noopener noreferrer nofolow">Про навчання</a></li>
                     </ul>
                 </nav>
                 <button class="header__signInButton">Зареєструватись</button>
@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <section class="educational-programme">
+    <section class="educational-programme" id="programme">
         <div class="container">
             <h2 class="caption-h2">Програма навчання</h2>
             <ul class="educational-programme__list">
@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <section class="education-steps">
+    <section class="education-steps" id="education-steps">
         <div class="container">
             <div class="education-steps__content">
                 <h2 class="caption-h2">Як проходить навчання?</h2>
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section class="tariffs">
+    <section class="tariffs" id="tariffs">
         <div class="container">
             <h2 class="caption-h2">Тарифи</h2>
             <ul class="tariffs__list">
@@ -218,9 +218,27 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            
+            <div class="footer__content">
+                <img class="footer__logo" src="images/logo_light.png" alt="logo">
+                <nav>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-list-item"><a href="#programme" class="footer__menu-list-link" rel="noopener noreferrer nofolow">Програма</a></li>
+                        <li class="footer__menu-list-item"><a href="#tariffs" class="footer__menu-list-link" rel="noopener noreferrer nofolow">Тарифи</a></li>
+                        <li class="footer__menu-list-item"><a href="#education-steps" class="footer__menu-list-link" rel="noopener noreferrer nofolow">Про навчання</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-list-item">Адреса: <a href="mailto:iridescentveneta@gmail.com" class="footer__contacts-list-link" rel="noopener noreferrer nofolow">iridescentveneta@gmail.com</a></li>
+                    <li class="footer__contacts-list-item">Тел: <a href="tel:+380967580057" class="footer__contacts-list-link" rel="noopener noreferrer nofolow">+380967580057</a></li>
+                </ul>
+                <ul class="footer__info-list">
+                    <li class="footer__info-list-item">Адреса: <a href="./" class="footer__info-list-link" rel="noopener noreferrer nofolow">Умова використання</a></li>
+                    <li class="footer__info-list-item">Тел: <a href="./" class="footer__info-list-link" rel="noopener noreferrer nofolow">Політика конфединціальності</a></li>
+                    <li class="footer__info-list-item">© 2024 DesignTeens</li>
+                </ul>
+            </div>
         </div>
     </footer>
 
