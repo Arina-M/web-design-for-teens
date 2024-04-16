@@ -132,6 +132,7 @@ ul{
     line-height: 120%;
     cursor: pointer;
     transition: background-color var(--transition);
+    outline: none;
 }
 
 .header__signInButton:hover, .header__signInButton:focus{
@@ -249,6 +250,7 @@ ul{
     bottom: 2%;
     right: 18%;
     transform: translate(-50%, -50%);
+    outline: none;
 }
 
 .hero__button-about-course:hover, .hero__button-about-course:focus{
@@ -366,7 +368,7 @@ ul{
 
 .for-students-who__list-item p{
     color: var(--color-purple);
-    font-family: var(--font-montserrat);
+    font-family: var(--font-roboto);
     font-size: 16px;
     text-align: center;
     font-weight: 500;
@@ -484,13 +486,11 @@ ul{
 
 .educational-programme__div ul li{
     color: var(--color-purple);
-    font-family: var(--font-montserrat);
+    font-family: var(--font-roboto);
     font-weight: 500;
     letter-spacing: 0.02px;
     font-size: 20px;
     width: 340px;
-
-
 }
 
 @media screen and (max-width: 1440px) {
@@ -584,7 +584,7 @@ ul{
 
 .step-info p{
     color: var(--color-purple);
-    font-family: var(--font-montserrat);
+    font-family: var(--font-roboto);
     font-size: 14px;
     font-weight: 500;
     width: 311px;
@@ -775,12 +775,12 @@ ul{
 }
 
 .tariffs__list-item:first-of-type .tariffs__item-info{
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 }
 
 .tariffs__item-description{
     color: var(--color-purple);
-    font-family: var(--font-montserrat);
+    font-family: var(--font-roboto);
     font-size: 16px;
     letter-spacing: 0.16px;
     line-height: 22px;
@@ -808,6 +808,7 @@ ul{
     font-weight: 700;
     transition: background-color var(--transition);
     border: none;
+    outline: none;
 }
 
 .tariffs__startEducationBtn:hover,
@@ -874,7 +875,7 @@ ul{
     }
 
     .tariffs__list-item:first-of-type .tariffs__item-info{
-        margin-bottom: 59px;
+        margin-bottom: 24px;
     }
 
     .tariffs__startEducationBtn{
@@ -883,13 +884,17 @@ ul{
     }
 }
 
+/*tablet*/
 @media screen and (max-width: 1040px) {
     .tariffs__list-item{
         width: 346px;
+        padding: 60px 38px 79px 38px;
     }
 
     .tariffs__item-caption{
         font-size: 25px;
+        line-height: 36px;
+        margin-bottom: 22px;
     }
 
     .tariffs__item-info {
@@ -906,6 +911,7 @@ ul{
 
     .tariffs__item-price{
         font-size: 22px;
+        margin: 20px 0;
     }
 
     .tariffs__list-item:first-of-type .tariffs__item-info{
@@ -920,8 +926,113 @@ ul{
 }
 
 
+/* REGISTRATION SECTION */
+.registration{
+    margin-top: 120px;
+}
 
+.registration__form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    width: 700px;
+    padding: 70px 68px 5px 68px;
+    background: url("../images/registration_form-bg.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
 
+.registration__input{
+    width: 100%;
+    background: #EBEBEB;
+    border-radius: 2px;
+    border: none;
+    height: 60px;
+    padding: 12px 16px;
+}
+
+.registration__input:focus{
+    outline: none;
+}
+
+.registration__input::placeholder{
+    font-size: 20px;
+    font-family: var(--font-roboto);
+    color:var(--color-light-purple);
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+
+.registration__form label:not(:first-of-type){
+    margin-top: 16px;
+}
+
+.registration__form label:nth-child(5){
+    margin-top: 32px;
+}
+
+.registration__button{
+    padding: 16px 24px;
+    background: var(--color-dark-purple);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    margin: 32px auto;
+    cursor: pointer;
+    transition: background-color var(--transition);
+    outline: none;
+}
+
+.registration__button:hover, .registration__button:focus{
+    background: var(--color-light-purple);
+}
+
+@media screen and (max-width: 1440px) {
+    .registration__form{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .registration__form{
+        width: 500px;
+    }
+
+    .registration__input::placeholder{
+        font-size: 17px;
+    }
+
+    .registration__button{
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 1040px) {
+    .registration__form{
+        width: 400px;
+    }
+
+    .registration__input{
+        height: 50px;
+    }
+
+    .registration__input::placeholder{
+        font-size: 14px;
+    }
+
+    .registration__button{
+        font-size: 10px;
+        padding: 12px 13px;
+        border-radius: 9px;
+    }
+}
 
 
 
