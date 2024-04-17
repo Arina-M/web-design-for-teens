@@ -245,11 +245,6 @@ ul{
 
 .hero__button-about-course{
     padding: 16px 24px;
-    color: var(--color-white);
-    font-family: var(--font-montserrat);
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
     border-radius: 15px;
     border: none;
     background: var(--color-dark-purple);
@@ -260,6 +255,14 @@ ul{
     right: 18%;
     transform: translate(-50%, -50%);
     outline: none;
+}
+
+.hero__button-about-course a{
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .hero__button-about-course:hover, .hero__button-about-course:focus{
@@ -1098,7 +1101,7 @@ ul{
     margin: 0 auto;
     padding-bottom: 32px;
     padding-top: 32px;
-    width: 850px;
+    width: 740px;
 }
 
 .footer__info-list-item, .footer__info-list-link{
@@ -1142,7 +1145,7 @@ ul{
     }
 
     .footer__info-list{
-        width: 755px;
+        width: 680px;
     }
 }
 
