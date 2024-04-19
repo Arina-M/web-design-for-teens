@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!--    styles-->
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <section class="account-management">
@@ -24,8 +27,9 @@
                 <label>
                     <input class="account-management__input" type="email" id="email" name="email" placeholder="Введіть пошту" required/>
                 </label>
-                <label>
+                <label class="relative">
                     <input class="account-management__input" type="password" id="password" name="password" placeholder="Введіть пароль" required/>
+                    <span class="show-password"><img alt="show password" src="./images/show-password.svg"></span>
                 </label>
                 <button class="account-management__button"><a>Увійти</a></button>
                 <div class="account-management__options">
