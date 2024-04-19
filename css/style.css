@@ -22,6 +22,35 @@ ul{
     list-style: none;
 }
 
+.caption-h2{
+    font-family: var(--font-montserrat);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 110%;
+    color: var(--color-purple);
+    text-align: center;
+    /*margin-bottom: 48px;*/
+}
+
+@media screen and (max-width: 1440px){
+
+}
+
+@media screen and (max-width: 1200px){
+    .caption-h2{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .caption-h2{
+        font-size: 28px;
+    }
+}
+
+
+
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -89,7 +118,6 @@ ul{
 .header__menu-logo{
     width: 163px;
     height: 107px;
-
 }
 
 .header__menu-list{
@@ -128,23 +156,26 @@ ul{
     background-color: var(--color-dark-purple);
 }
 
-.header__signInButton{
+.header__registration-button{
     padding: 16px 24px;
     border-radius: 15px;
     background: var(--color-dark-purple);
-    color: var(--color-white);
     border: none;
-    font-family: var(--font-montserrat);
-    font-weight: 700;
-    letter-spacing: 0.16px;
-    font-size: 16px;
-    line-height: 120%;
     cursor: pointer;
     transition: background-color var(--transition);
     outline: none;
 }
 
-.header__signInButton:hover, .header__signInButton:focus{
+.header__registration-button a{
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    letter-spacing: 0.16px;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-white);
+}
+
+.header__registration-button:hover, .header__registration-button:focus{
     background: var(--color-light-purple);
 }
 
@@ -154,10 +185,14 @@ ul{
         width: 154px;
         height: 100px;
     }
-    .header__signInButton{
+    .header__registration-button{
         padding: 15px 20px;
+    }
+
+    .header__registration-button a{
         font-size: 14px;
     }
+
 }
 
 /*tablet*/
@@ -175,11 +210,14 @@ ul{
         font-size: 12px;
     }
 
-    .header__signInButton{
-        font-size: 10px;
+    .header__registration-button{
         padding: 12px 13px;
         border-radius: 9px;
     }
+    .header__registration-button a{
+        font-size: 10px;
+    }
+
 }
 
 
@@ -255,6 +293,8 @@ ul{
     right: 18%;
     transform: translate(-50%, -50%);
     outline: none;
+    display: flex;
+    align-items: center;
 }
 
 .hero__button-about-course a{
@@ -292,6 +332,7 @@ ul{
     }
 }
 
+/*tablet*/
 @media screen and (max-width: 1200px){
     .hero__textH1{
         font-size: 55px;
@@ -308,22 +349,25 @@ ul{
     }
 
     .hero__button-about-course{
-        right: 12%;
+        right: 11%;
         bottom: 0;
-        font-size: 14px;
         padding: 15px 20px;
+
+    }
+
+    .hero__button-about-course a{
+        font-size: 14px;
     }
 
 }
 
-/*tablet*/
 @media screen and (max-width: 1040px) {
     .hero_text{
         left: 43%;
     }
 
     .hero__textH1{
-        font-size: 35px;
+        font-size: 37px;
     }
 
     .hero__textH3{
@@ -336,12 +380,15 @@ ul{
     }
 
     .hero__button-about-course{
-        font-size: 10px;
         padding: 12px 13px;
         border-radius: 9px;
+    }
 
+    .hero__button-about-course a{
+        font-size: 10px;
     }
 }
+
 
 
 
@@ -350,19 +397,10 @@ ul{
     margin-top: 120px;
 }
 
-.caption-h2{
-    font-family: var(--font-montserrat);
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 110%;
-    color: var(--color-purple);
-    text-align: center;
-    margin-bottom: 48px;
-}
-
 .for-students-who__list{
     display: flex;
     justify-content: space-between;
+    margin-top: 48px;
 }
 
 .for-students-who__img{
@@ -389,14 +427,12 @@ ul{
     margin: 0 auto;
 }
 
+/*tablet*/
+
 /*desktop*/
 @media screen and (max-width: 1200px) {
     .for-students-who{
         margin-top: 110px;
-    }
-
-    .caption-h2{
-        font-size: 38px;
     }
 
     .for-students-who__list-item h3{
@@ -416,25 +452,14 @@ ul{
 
 }
 
-/*tablet*/
 @media screen and (max-width: 1040px){
     .for-students-who{
         margin-top: 55px;
     }
 
-    .caption-h2 {
-        font-size: 28px;
-        margin-bottom: 35px;
-    }
-
     .for-students-who__list {
         flex-wrap: wrap;
-        /*justify-content: center;*/
-        /*gap: 30px 148px;*/
-    }
-
-    .for-students-who__list-item {
-        max-width: 220px;
+        margin-top: 35px;
     }
 
     .for-students-who__list-item h3{
@@ -444,20 +469,23 @@ ul{
     .for-students-who__list-item p{
         font-size: 10px;
     }
+
+    .for-students-who__list-item {
+        max-width: 220px;
+    }
 }
 
+/*@media screen and (max-width: 768px) {*/
 
-@media screen and (max-width: 768px) {
+/*}*/
 
-}
+/*@media screen and (min-width: 630px) {*/
 
-@media screen and (min-width: 630px) {
+/*}*/
 
-}
+/*@media screen and (min-width: 480px) {*/
 
-@media screen and (min-width: 480px) {
-
-}
+/*}*/
 
 
 
@@ -469,6 +497,7 @@ ul{
 .educational-programme__list{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 48px;
 }
 
 .educational-programme__list-item{
@@ -539,8 +568,11 @@ ul{
 
 }
 
-/*tablet*/
 @media screen and (max-width: 1040px){
+    .education-steps__list{
+        margin-top: 35px;
+    }
+
     .educational-programme__list-item{
         padding: 65px 43px;
     }
@@ -560,6 +592,7 @@ ul{
         width: 135px;
     }
 }
+
 
 
 
@@ -636,14 +669,12 @@ ul{
 .education-steps__right-figure{
     position: absolute;
     z-index: 5;
-    bottom: -30px;
+    bottom: -88px;
     right: 40px;
     width: 480px;
-    /*width: 37%;*/
-    /*margin-top: 300px;*/
+
 }
 
-/*desktop*/
 @media screen and (max-width: 1440px) {
     .education-steps__content {
         width: 780px;
@@ -654,7 +685,6 @@ ul{
     }
 
     .education-steps__left-figure {
-        top: -185px;
         left: 20px;
         width: 470px;
     }
@@ -667,6 +697,9 @@ ul{
 
 }
 
+/* tablet*/
+
+/*desktop*/
 @media screen and (max-width: 1200px) {
     .education-steps__content{
         width: 670px;
@@ -705,7 +738,6 @@ ul{
     }
 }
 
-    /* tablet*/
 @media screen and (max-width: 1040px) {
     .education-steps__content{
         width: 570px;
@@ -744,8 +776,10 @@ ul{
         width: 322px;
         right: 78px;
     }
-
 }
+
+
+
 
 
 
@@ -757,6 +791,7 @@ ul{
 .tariffs__list{
     display: flex;
     justify-content: space-between;
+    margin-top: 48px;
 }
 
 .tariffs__list-item{
@@ -833,6 +868,9 @@ ul{
     justify-content: center;
 }
 
+/*tablet*/
+
+/*desktop*/
 
 @media screen and (max-width: 1440px) {
     .tariffs__list-item{
@@ -896,8 +934,12 @@ ul{
     }
 }
 
-/*tablet*/
+
 @media screen and (max-width: 1040px) {
+    .tariffs__list{
+        margin-top: 35px;
+    }
+
     .tariffs__list-item{
         width: 346px;
         padding: 60px 38px 79px 38px;
@@ -938,6 +980,8 @@ ul{
 }
 
 
+
+
 /* REGISTRATION SECTION */
 .registration{
     margin-top: 120px;
@@ -946,18 +990,19 @@ ul{
 .registration__form{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 48px auto 0 auto;
     position: relative;
     width: 700px;
     padding: 70px 68px 5px 68px;
     background: url("../images/registration_form-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 15px;
+
 }
 
 .registration__input{
     width: 100%;
-    background: #EBEBEB;
+    background: var(--color-white);
     border-radius: 2px;
     border: none;
     height: 60px;
@@ -1004,12 +1049,15 @@ ul{
     background: var(--color-light-purple);
 }
 
+/*tablet*/
+
+
+/*desktop*/
 @media screen and (max-width: 1440px) {
     .registration__form{
         width: 600px;
     }
 }
-
 @media screen and (max-width: 1200px) {
     .registration__form{
         width: 500px;
@@ -1025,10 +1073,10 @@ ul{
     }
 }
 
-/*tablet*/
 @media screen and (max-width: 1040px) {
     .registration__form{
         width: 400px;
+        margin: 35px auto 0 auto;
     }
 
     .registration__input{
@@ -1045,6 +1093,7 @@ ul{
         border-radius: 9px;
     }
 }
+
 
 /* FOOTER */
 .footer{
@@ -1112,12 +1161,15 @@ ul{
     font-weight: 400;
 }
 
+
+/*@media screen and (max-width: 1440px) {*/
+
+
+/*}*/
+
+
+
 /*desktop*/
-@media screen and (max-width: 1440px) {
-
-
-}
-
 @media screen and (max-width: 1200px) {
     .footer__logo{
         width: 154px;
@@ -1149,6 +1201,7 @@ ul{
     }
 }
 
+
 /*tablet*/
 @media screen and (max-width: 1040px) {
     .footer-logo {
@@ -1179,14 +1232,189 @@ ul{
     .footer__info-list{
         width: 590px;
     }
-
 }
 
 
 
 
 
+/*------- ACCOUNT MANAGEMENT PAGES  -----------------------*/
+.account-management{
+    display: flex;
+    width: 100%;
+}
 
+.account-management__img{
+    background: url("../images/registration-page-bg.jpg") no-repeat;
+    background-size: cover;
+    width: 60%;
+    float: left;
+    height: 100vh;
+}
 
+.account-management__content{
+    background: #fff;
+    /*width: 600px;*/
+    width: 40%;
+    float: left;
+    padding: 100px 50px;
+}
+
+.account-management__logo{
+    margin: 0 auto;
+}
+
+.account-management__form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.account-management__input{
+    width: 100%;
+    background: var(--color-white);
+    border-radius: 2px;
+    border: none;
+    height: 60px;
+    padding: 12px 16px;
+}
+
+.account-management__input:focus{
+    outline: none;
+}
+
+.account-management__input::placeholder{
+    font-size: 20px;
+    font-family: var(--font-roboto);
+    color:var(--color-light-purple);
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+
+.account-management__button{
+    border-radius: 15px;
+    background: var(--color-dark-purple);
+    padding: 16px 64px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+.account-management__button a{
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    letter-spacing: 0.16px;
+}
+
+.account-management__button:hover,
+.account-management__button:focus{
+    background: var(--color-light-purple);
+}
+
+.account-management__options{
+    margin: 0 auto;
+}
+.account-management__options p{
+    text-align: center;
+}
+
+.account-management__options p:nth-child(1){
+    margin-bottom: 12px;
+}
+
+.account-management__options{
+    color: var(--color-purple);
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.account-management__content .caption-h2{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.account-management__options:hover{
+    font-weight: 600;
+}
+
+.account-management__text{
+    font-size: 20px;
+    font-family: var(--font-roboto);
+    letter-spacing: 0.2px;
+    color: var(--color-purple);
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1260px){
+    .account-management__text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .account-management__button a{
+        font-size: 14px;
+    }
+
+    .account-management__options{
+        font-size: 16px;
+    }
+
+    .account-management__options p:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+    .account-management__input{
+    height: 52px;
+    }
+
+    .account-management__input::placeholder{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .account-management__text{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .account-management__button {
+        padding: 14px 46px;
+        border-radius: 9px;
+    }
+
+    .account-management__button a{
+        font-size: 12px;
+    }
+
+    .account-management__options{
+        font-size: 13px;
+    }
+
+    .account-management__options p:nth-child(1){
+        margin-bottom: 7px;
+    }
+
+    .account-management__input{
+    height: 45px;
+    }
+
+    .account-management__input::placeholder{
+        font-size: 12px;
+    }
+}
 
 
