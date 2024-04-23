@@ -1239,7 +1239,8 @@ ul{
 }
 
 /* EYE PASSWORD*/
-.show-password{
+
+.hide-password{
     position: absolute;
     top: 20px;
     width: 20px;
@@ -1247,9 +1248,6 @@ ul{
     right: 17px;
     cursor: pointer;
 }
-
-
-
 
 
 /*------- ACCOUNT MANAGEMENT PAGES  -----------------------*/

@@ -14,8 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!--    styles-->
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="./js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
 <body>
@@ -210,12 +209,12 @@
                     <input class="registration__input" type="tel" id="telephone" name="telephone" placeholder="Введіть номер телефону" required/>
                 </label>
                 <label class="relative">
-                    <input class="registration__input" type="password" id="password" name="password" placeholder="Введіть пароль" required/>
-                    <span class="show-password"><img alt="show password" src="./images/show-password.svg"></span>
+                    <input class="registration__input password" type="password" id="password" name="password" placeholder="Введіть пароль" required/>
+                    <img class="hide-password" alt="hide password" src="./images/hide-password.svg">
                 </label>
                 <label class="relative">
-                    <input class="registration__input" type="password" id="verify-password" name="verify-password" placeholder="Повторіть пароль" required/>
-                    <span class="show-password"><img alt="show password" src="./images/show-password.svg"></span>
+                    <input class="registration__input password" type="password" id="verify-password" name="verify-password" placeholder="Повторіть пароль" required/>
+                    <img class="hide-password" alt="hide password" src="./images/hide-password.svg">
                 </label>
                 <button class="registration__button">Зареєструватись</button>
             </form>
