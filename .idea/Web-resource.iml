@@ -4,8 +4,10 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="modern-normalize" level="application" />
+    <orderEntry type="library" name="lordicon" level="application" />
     <orderEntry type="library" name="jquery-3.7.0" level="application" />
     <orderEntry type="library" name="modern-normalize" level="application" />
-    <orderEntry type="library" name="modern-normalize" level="application" />
+    <orderEntry type="library" name="jquery-3.7.0" level="application" />
   </component>
 </module>

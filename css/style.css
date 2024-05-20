@@ -103,6 +103,7 @@ ul{
     --color-dark-pink: #C5A7CD;
     --color-white: #EBEBEB;
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --color-light-grey: rgba(170, 166, 181, 0.3);
 }
 
 
@@ -1238,7 +1239,7 @@ ul{
     position: relative;
 }
 
-/* EYE PASSWORD*/
+
 
 .hide-password{
     position: absolute;
@@ -1248,6 +1249,8 @@ ul{
     right: 17px;
     cursor: pointer;
 }
+
+
 
 
 /*------- ACCOUNT MANAGEMENT PAGES  -----------------------*/
@@ -1430,3 +1433,279 @@ ul{
 }
 
 
+
+
+
+/* USER PANEL INNER PAGES - PORTFOLIO, GAMES, COURSES, CALENDAR*/
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-panel__header{
+    border-bottom: 2px solid var(--color-light-grey);
+}
+.user-panel__header .header__content{
+    margin: 10px 0;
+}
+
+.user-panel__header-avatar{
+    width: 37px;
+    height: 38px;
+    background: var(--color-dark-purple);
+    border-radius: 15px;
+}
+
+.user-panel__header-menu{
+    display: flex;
+    gap: 12px;
+}
+
+.user-panel__header-menu-link{
+    color: var(--color-dark-purple);
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    transition: font-weight var(--transition);
+    border-right: 1px solid var(--color-light-grey);
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.user-panel__header-menu-item:last-child .user-panel__header-menu-link{
+    border-right: none;
+    padding-right: 0;
+}
+
+.user-panel__header-menu-link:hover,
+.user-panel__header-menu-link:focus{
+    font-weight: 600;
+}
+
+.aside{
+    height: auto;
+    border-right: 1px solid var(--color-light-grey);
+    padding-top: 20px;
+    /*overflow-y: auto;*/
+}
+
+.aside .aside-list-link {
+    padding: 10px 4px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(19, 5, 54, 0.3);
+    font-family: var(--font-roboto);
+    display: block;
+    transition: color var(--transition);
+    text-align: center;
+    position: relative;
+}
+
+.aside-icons{
+    fill: rgba(19, 5, 54, 0.3);
+    width: 24px;
+    height: 24px;
+    transition: fill var(--transition);
+    display: block;
+    margin: auto;
+}
+
+.aside-list-link.current-panel{
+    color: var(--color-dark-purple);
+}
+
+.aside-icons.current-panel{
+    fill: var(--color-dark-purple);
+}
+
+.aside-list-link.current-panel::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    /*bottom: -3px;*/
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: var(--color-dark-purple);
+}
+
+.user-panel__courses{
+    position: relative;
+    padding-top: 20px;
+    /*padding-left: 20px;*/
+    width: 100%;
+    /*display: flex;*/
+}
+
+
+.user-panel__courses-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    /*width: 100%;*/
+}
+
+.top-text{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 20px ;
+}
+
+.top-text h2{
+    color: var(--color-dark-purple);
+    font-family: var(--font-montserrat);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.top-text div{
+    color: var(--color-purple);
+    font-family: var(--font-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.user-panel__apply-button{
+    background: var(--color-dark-purple);
+    color: var(--color-white);
+    border: none;
+    border-radius: 15px;
+    padding: 16px 64px;
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    transition: background-color var(--transition);
+    cursor: pointer;
+}
+
+.user-panel__apply-button:hover,
+.user-panel__apply-button:focus{
+    background-color: var(--color-light-purple);
+}
+
+.border{
+    border-left: 1px solid var(--color-light-grey);
+    padding-left: 12px;
+}
+
+.courses-content{
+    background: var(--color-white);
+    padding: 50px 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.courses-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.courses-list-item{
+    width: 807px;
+    padding: 24px;
+    border-radius: 15px;
+    background: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Выравнивание элементов по вертикали */
+}
+
+.courses-list-item img{
+    width: 58px;
+    height: 58px;
+}
+
+.courses-list-item h3{
+    color: var(--color-dark-purple);
+    font-family: var(--font-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.courses-list-item img,
+.courses-list-item h3 {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.courses-list-item p{
+    width: 677px;
+    margin-top: 12px;
+    color: #AAA6B5;;
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    margin-left: 70px;
+}
+
+.courses-list-item h3,
+.courses-list-item p {
+    text-align: left; /* Выравнивание текста по левому краю */
+    display: block; /* Убедитесь, что элементы отображаются как блочные */
+    /*width: 100%; !* Ширина элементов занимает всю доступную ширину *!*/
+}
+
+.start-education-button{
+    width: auto;
+    color: var(--color-white);
+    background: var(--color-dark-purple);
+    border-radius: 15px;
+    border: none;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    padding: 16px 64px;
+    margin-left: auto;
+    transition: background-color var(--transition);
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.start-education-button:hover,
+.start-education-button:focus{
+    background: var(--color-light-purple);
+}
+
+.achievements{
+    width: 453px;
+    height: 364px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.achievements-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding-left: 30px;
+}
+
+.achievements-text{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.achievements-text p:first-child{
+    color: var(--color-dark-purple);
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    /*margin-right: auto;*/
+    /*margin-left: 10px;*/
+}
+
+.achievements-text p:last-child{
+    color: #AAA6B5;
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    /*margin-right: auto;*/
+    /*margin-left: 10px;*/
+}

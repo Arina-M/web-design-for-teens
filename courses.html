@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Courses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+              integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer" />
+        <!--    fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <!--    styles-->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="./js/index.js"></script>
+
+    </head>
+    <body>
+        <header class="user-panel__header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="user-panel__header-avatar"></div>
+                    <nav>
+                        <ul class="user-panel__header-menu">
+                            <li class="user-panel__header-menu-item"><a href="#" class="user-panel__header-menu-link" rel="noopener noreferrer nofolow">Повідомлення</a></li>
+                            <li class="user-panel__header-menu-item"><a href="#" class="user-panel__header-menu-link" rel="noopener noreferrer nofolow">Успішність</a></li>
+                            <li class="user-panel__header-menu-item"><a href="#" class="user-panel__header-menu-link" rel="noopener noreferrer nofolow">Профіль</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="container flex-container">
+            <aside class="aside">
+                <ul class="aside-list">
+                    <li class="aside-list-item">
+                        <a href="./courses.html" class="aside-list-link current-panel" rel="noopener noreferrer nofolow">
+                            <svg class="aside-icons current-panel">
+                                <use href="./images/icons.svg#icon-course"></use>
+                            </svg>
+                            <p>Курси</p>
+                        </a>
+                    </li>
+                    <li class="aside-list-item">
+                        <a href="./calendar.html" class="aside-list-link" rel="noopener noreferrer nofolow">
+                            <svg class="aside-icons">
+                                <use href="./images/icons.svg#icon-calendar"></use>
+                            </svg>
+                            <p>Календар</p>
+                        </a>
+                    </li>
+                    <li class="aside-list-item">
+                        <a href="./portfolio.html" class="aside-list-link" rel="noopener noreferrer nofolow">
+                            <svg class="aside-icons">
+                                <use href="./images/icons.svg#icon-portfolio"></use>
+                            </svg>
+                            <p>Портфоліо</p>
+                        </a>
+                    </li>
+                    <li class="aside-list-item">
+                        <a href="./games.html" class="aside-list-link" rel="noopener noreferrer nofolow">
+                            <svg class="aside-icons">
+                                <use href="./images/icons.svg#icon-games"></use>
+                            </svg>
+                            <p>Ігри</p>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="user-panel__courses">
+                <div class="user-panel__courses-top">
+                    <div class="top-text">
+                        <h2>Курси</h2>
+                        <div>UI/UX design</div>
+                    </div>
+                    <div class="border">
+                        <button class="user-panel__apply-button">Подати заявку</button>
+                    </div>
+                </div>
+
+                <div class="courses-content">
+                    <ul class="courses-list">
+                        <li class="courses-list-item">
+                            <img src="./images/user-panel-figure1.png" alt="figure 1">
+                            <h3>Design Basics</h3>
+                            <p>На перших порах освоєння дизайну важливо навчитися працювати руками. Розберемося з Figma, дізнаємося про основні UI-компоненти та створимо їх самостійно. Познайомимося з функціоналом Autolayout і Variants. А потім створимо прототип та клікабельний макет мобільного додатка.</p>
+                            <button class="start-education-button">Почати навчання</button>
+                        </li>
+                        <li class="courses-list-item">
+                            <img src="./images/user-panel-figure2.png" alt="figure 2">
+                            <h3>Course Fundamentals</h3>
+                            <p>Ми хочемо, щоб ви приєдналися до курсу підготовленими і швидко рухалися разом з групою, коли почнеться навчання. Ознайомлення з теорією та виконання наведених нижче завдань підвищить вашу продуктивність під час курсу і в довгостроковій перспективі допоможе вам отримати роботу в кращій компанії з вищою заробітною платою.</p>
+                            <button class="start-education-button">Оплатити навчання та почати</button>
+                        </li>
+                        <li class="courses-list-item">
+                            <img src="./images/user-panel-figure3.png" alt="figure 3">
+                            <h3>Employment</h3>
+                            <p>Відшліфовуємо резюме, рекомендаційний лист та профілі в професійних соціальних мережах. Працюємо з базою вакансій. Проходимо тестові технічні та нетехнічні інтерв’ю. Вчимося комунікувати з рекрутерами. Проходимо справжнє інтерв’ю. Приймаємо оффер. Виходимо на роботу.</p>
+                            <button class="start-education-button">Оплатити навчання та почати</button>
+                        </li>
+                    </ul>
+                    <div class="achievements">
+                        <div class="achievements-text">
+                            <p>Мої досягнення</p>
+                            <p>Переглянути всі</p>
+                        </div>
+                        <ul class="achievements-list">
+                            <li class="achievements-list-item"><img src="./images/leaves.png" alt="leaves"></li>
+                            <li class="achievements-list-item"><img src="./images/goal.png" alt="goals"></li>
+                            <li class="achievements-list-item"><img src="./images/plus.png" alt="plus"></li>
+                            <li class="achievements-list-item"><img src="./images/plus.png" alt="plus"></li>
+                            <li class="achievements-list-item"><img src="./images/plus.png" alt="plus"></li>
+                            <li class="achievements-list-item"><img src="./images/plus.png" alt="plus"></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </body>
+</html>
